@@ -29,6 +29,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-vscode`,
+            options: {
+              theme: 'Dark+ (default dark)', // Or install your favorite theme from GitHub
+            },
+          },
+          {
             resolve: `gatsby-remark-katex`,
             options: {
               strict: `ignore`,
