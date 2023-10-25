@@ -28,15 +28,26 @@ body.light {
     .item {
       border: 1px solid $light-category-border-color;
       background-color: $light-category-item-color;
-      -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+
+      transition-property: background-color, color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
+
+      &:not([aria-selected='true']) {
+        &:hover {
+          background-color: #eaeff4;
+        }
+      }
+
       a {
         color: $light-category-text-color;
       }
+
       &[aria-selected='true'] {
-        border: 2px solid $light-category-highlight-border-color;
-        font-weight: bolder;
+        background-color: #17130f;
+        color: #fff;
       }
+
       &[aria-selected='true'] a {
         color: $light-category-highlight-text-color;
       }
@@ -46,12 +57,15 @@ body.light {
   .thumbnail {
     h3 {
       color: $dark-gray;
+      transition: color 0.2s ease-in-out;
     }
     p {
       color: $middle-gray;
     }
     &:hover {
-      text-shadow: $light-hover-text-shadow;
+      h3 {
+        color: #2590e1;
+      }
     }
   }
 

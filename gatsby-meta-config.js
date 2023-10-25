@@ -1,5 +1,5 @@
 module.exports = {
-  title: `Min on software engineering`,
+  title: `Min on product engineering`,
   description: `Blog posted about ...`,
   author: `조민철`,
   introduction: ``,

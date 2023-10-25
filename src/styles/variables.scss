@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 // app
 $theme-gradient: linear-gradient(72deg, #291e95, #cc007a);
 $top-header-text-color: #fff;
@@ -39,7 +41,7 @@ $light-category-item-color: #fff;
  * @dark theme
  */
 $dark-background-color: #282c35;
-$dark-link-color: #bb72ec;
+$dark-link-color: #d489b6;
 
 $dark-lightest-font-color: #fff;
 $dark-light-font-color: #eeeeee;
@@ -51,7 +53,7 @@ $dark-hover-text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
 $dark-category-item-color: #282c35;
 $dark-category-background-color: #24272c;
 
-$dark-category-border-color: rgb(56, 54, 54);
+$dark-category-border-color: #44413d;
 $dark-category-text-color: #d8d7d7;
 
 $dark-category-highlight-border-color: #666;
